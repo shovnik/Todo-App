@@ -1,22 +1,13 @@
 import React from 'react';
-import { combineReducers, createStore } from 'redux';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { Constants } from 'expo'
-import filterReducer from './reducers/filter';
-import inputReducer from './reducers/input';
-import tasksReducer from './reducers/tasks';
+import { rootReducer } from './reducers/rootReducer'
 import NewTask from './components/NewTask';
 import Tasks from './components/Tasks';
 import Filter from './components/Filter';
 import { Wrapper } from './styles';
 
-const reducer = combineReducers({
-  filter: filterReducer,
-  input: inputReducer,
-  tasks: tasksReducer
-});
-
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 class App extends React.Component {
   render() {
