@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { rootReducer } from './reducers/rootReducer'
+import rootReducer from './reducers/rootReducer'
 import NewTask from './components/NewTask';
 import Tasks from './components/Tasks';
 import Filter from './components/Filter';

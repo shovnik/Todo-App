@@ -3,7 +3,7 @@ import filterReducer from './filter';
 import inputReducer from './input';
 import tasksReducer from './tasks';
 
-export const rootReducer = combineReducers({
+export default combineReducers({
   filter: filterReducer,
   input: inputReducer,
   tasks: tasksReducer
